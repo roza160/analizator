@@ -1,0 +1,62 @@
+[
+  {
+    "wymaganie": "Dane NumPy i wagi",
+    "status": "działa",
+    "dowod": "8 nazw, macierz (8,4), float, zgodne dane i wagi"
+  },
+  {
+    "wymaganie": "Normalizacja i ważona siła",
+    "status": "działa",
+    "dowod": "[0.4538461538461539, 0.47500000000000003, 0.4586538461538462, 0.48894230769230773, 0.510576923076923, 0.5348557692307693, 0.39495192307692306, 0.45]"
+  },
+  {
+    "wymaganie": "Stałe kolumny",
+    "status": "działa",
+    "dowod": "Stałe kolumny, wszystkie kolumny stałe i zera: bez NaN i ostrzeżeń"
+  },
+  {
+    "wymaganie": "Walidacja",
+    "status": "działa",
+    "dowod": "10 niepoprawnych wejść → ValueError; poprawne dane i zera przyjęte"
+  },
+  {
+    "wymaganie": "Role i pierwszeństwo ofensywy",
+    "status": "działa",
+    "dowod": "8 postaci oraz 5 granic progów i przypadek obu ról"
+  },
+  {
+    "wymaganie": "Macierz pojedynków",
+    "status": "nie działa",
+    "dowod": "AttributeError: module 'wynik_ai' has no attribute 'macierz_pojedynkow'"
+  },
+  {
+    "wymaganie": "Zgodność obliczeń dla dodatkowych danych",
+    "status": "nie działa",
+    "dowod": "AttributeError: module 'wynik_ai' has no attribute 'macierz_pojedynkow'"
+  },
+  {
+    "wymaganie": "Wbudowane testy",
+    "status": "nie działa",
+    "dowod": "AttributeError: module 'wynik_ai' has no attribute 'testy'"
+  },
+  {
+    "wymaganie": "Uruchamianie walidacji i testów w main",
+    "status": "nie działa",
+    "dowod": "AttributeError: module 'wynik_ai' has no attribute 'testy'"
+  },
+  {
+    "wymaganie": "CSV: zawartość, format i kodowanie",
+    "status": "nie działa",
+    "dowod": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpjxkm7waf/raport_postaci.csv'"
+  },
+  {
+    "wymaganie": "Raport, ranking, filtr i statystyki",
+    "status": "nie działa",
+    "dowod": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmp1zzg3sp9/raport_postaci.csv'"
+  },
+  {
+    "wymaganie": "Scenariusze brzegowe end-to-end",
+    "status": "nie działa",
+    "dowod": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpjypb2q46/raport_postaci.csv'"
+  }
+]

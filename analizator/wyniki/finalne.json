@@ -1,0 +1,62 @@
+[
+  {
+    "wymaganie": "Dane NumPy i wagi",
+    "status": "działa",
+    "dowod": "8 nazw, macierz (8,4), float, zgodne dane i wagi"
+  },
+  {
+    "wymaganie": "Normalizacja i ważona siła",
+    "status": "działa",
+    "dowod": "[0.4538461538461539, 0.47500000000000003, 0.4586538461538462, 0.48894230769230773, 0.510576923076923, 0.5348557692307693, 0.39495192307692306, 0.45]"
+  },
+  {
+    "wymaganie": "Stałe kolumny",
+    "status": "działa",
+    "dowod": "Stałe kolumny, wszystkie kolumny stałe i zera: bez NaN i ostrzeżeń"
+  },
+  {
+    "wymaganie": "Walidacja",
+    "status": "działa",
+    "dowod": "10 niepoprawnych wejść → ValueError; poprawne dane i zera przyjęte"
+  },
+  {
+    "wymaganie": "Role i pierwszeństwo ofensywy",
+    "status": "działa",
+    "dowod": "8 postaci oraz 5 granic progów i przypadek obu ról"
+  },
+  {
+    "wymaganie": "Macierz pojedynków",
+    "status": "działa",
+    "dowod": "4 scenariusze; logistyka k=8, przekątna 0.5, P+P.T=1"
+  },
+  {
+    "wymaganie": "Zgodność obliczeń dla dodatkowych danych",
+    "status": "działa",
+    "dowod": "5 zbiorów (n=2,3,8,17,100), seed=20261104, stałe HP, tolerancja 1e-12"
+  },
+  {
+    "wymaganie": "Wbudowane testy",
+    "status": "działa",
+    "dowod": "testy() zakończone bez błędu"
+  },
+  {
+    "wymaganie": "Uruchamianie walidacji i testów w main",
+    "status": "działa",
+    "dowod": "main(): najpierw waliduj(), potem testy(), przed raportem"
+  },
+  {
+    "wymaganie": "CSV: zawartość, format i kodowanie",
+    "status": "działa",
+    "dowod": "Nagłówek + 8 wierszy identyczne z B; BOM, średnik, 4 miejsca, procenty 2 miejsca"
+  },
+  {
+    "wymaganie": "Raport, ranking, filtr i statystyki",
+    "status": "działa",
+    "dowod": "stdout identyczny z B: ranking, filtr Berserker, statystyki i zapis"
+  },
+  {
+    "wymaganie": "Scenariusze brzegowe end-to-end",
+    "status": "działa",
+    "dowod": "4 alternatywne zbiory: remisy, 2 postacie, stałe kolumny, Brak, obie role, średnie bez siebie, filtr dokładnie HP=100/szybkość=10/siła=0.45; stdout i CSV zgodne"
+  }
+]
